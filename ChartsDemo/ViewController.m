@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 
+
+#import "ChartsDemo-Bridging-Header.h"
+#import "ChartsDemo-Swift.h"
+
 @interface ViewController ()
 
 @end
@@ -16,6 +20,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    LineChartView *charView = [[LineChartView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:charView];
+    
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 

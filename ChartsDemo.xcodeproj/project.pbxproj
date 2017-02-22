@@ -13,7 +13,33 @@
 		786761E51E5DB287000B901C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786761E31E5DB287000B901C /* Main.storyboard */; };
 		786761E71E5DB287000B901C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786761E61E5DB287000B901C /* Assets.xcassets */; };
 		786761EA1E5DB287000B901C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786761E81E5DB287000B901C /* LaunchScreen.storyboard */; };
+		786761FF1E5DB802000B901C /* ChartsConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786761FE1E5DB802000B901C /* ChartsConnect.swift */; };
+		786762001E5DBAA4000B901C /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786761F81E5DB4FE000B901C /* Charts.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		786761F71E5DB4FE000B901C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 786761F11E5DB4FE000B901C /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		786761F91E5DB4FE000B901C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 786761F11E5DB4FE000B901C /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06B120D51D811E6200D14B02;
+			remoteInfo = ChartsRealm;
+		};
+		786761FB1E5DB4FE000B901C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 786761F11E5DB4FE000B901C /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		786761D71E5DB287000B901C /* ChartsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +52,9 @@
 		786761E61E5DB287000B901C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		786761E91E5DB287000B901C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		786761EB1E5DB287000B901C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		786761F11E5DB4FE000B901C /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master/Charts.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		786761FD1E5DB801000B901C /* ChartsDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChartsDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		786761FE1E5DB802000B901C /* ChartsConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsConnect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				786762001E5DBAA4000B901C /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,15 +88,18 @@
 		786761D91E5DB287000B901C /* ChartsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				786761F11E5DB4FE000B901C /* Charts.xcodeproj */,
 				786761DD1E5DB287000B901C /* AppDelegate.h */,
 				786761DE1E5DB287000B901C /* AppDelegate.m */,
 				786761E01E5DB287000B901C /* ViewController.h */,
 				786761E11E5DB287000B901C /* ViewController.m */,
+				786761FE1E5DB802000B901C /* ChartsConnect.swift */,
 				786761E31E5DB287000B901C /* Main.storyboard */,
 				786761E61E5DB287000B901C /* Assets.xcassets */,
 				786761E81E5DB287000B901C /* LaunchScreen.storyboard */,
 				786761EB1E5DB287000B901C /* Info.plist */,
 				786761DA1E5DB287000B901C /* Supporting Files */,
+				786761FD1E5DB801000B901C /* ChartsDemo-Bridging-Header.h */,
 			);
 			path = ChartsDemo;
 			sourceTree = "<group>";
@@ -77,6 +110,16 @@
 				786761DB1E5DB287000B901C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		786761F21E5DB4FE000B901C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				786761F81E5DB4FE000B901C /* Charts.framework */,
+				786761FA1E5DB4FE000B901C /* ChartsRealm.framework */,
+				786761FC1E5DB4FE000B901C /* ChartsTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +154,7 @@
 					786761D61E5DB287000B901C = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = A4JK97749S;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,12 +170,42 @@
 			mainGroup = 786761CE1E5DB287000B901C;
 			productRefGroup = 786761D81E5DB287000B901C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 786761F21E5DB4FE000B901C /* Products */;
+					ProjectRef = 786761F11E5DB4FE000B901C /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				786761D61E5DB287000B901C /* ChartsDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		786761F81E5DB4FE000B901C /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 786761F71E5DB4FE000B901C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		786761FA1E5DB4FE000B901C /* ChartsRealm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsRealm.framework;
+			remoteRef = 786761F91E5DB4FE000B901C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		786761FC1E5DB4FE000B901C /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 786761FB1E5DB4FE000B901C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		786761D51E5DB287000B901C /* Resources */ = {
@@ -152,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				786761E21E5DB287000B901C /* ViewController.m in Sources */,
+				786761FF1E5DB802000B901C /* ChartsConnect.swift in Sources */,
 				786761DF1E5DB287000B901C /* AppDelegate.m in Sources */,
 				786761DC1E5DB287000B901C /* main.m in Sources */,
 			);
@@ -182,6 +257,7 @@
 		786761EC1E5DB287000B901C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -229,6 +305,7 @@
 		786761ED1E5DB287000B901C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -270,24 +347,35 @@
 		786761EF1E5DB287000B901C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = A4JK97749S;
 				INFOPLIST_FILE = ChartsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coollang.ChartsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChartsDemo/ChartsDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		786761F01E5DB287000B901C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = A4JK97749S;
 				INFOPLIST_FILE = ChartsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coollang.ChartsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChartsDemo/ChartsDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
